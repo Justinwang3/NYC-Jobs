@@ -130,7 +130,7 @@
 				var cardTemplate = document.getElementById("cardTemplate").innerHTML;
 				for(var index = 0; index < data.length; index++){
 					//if(data[index].incident_zip == zip.value && data[index].agency_name == agency.value){
-					if(data[index].job_category.toUpperCase() == job_category.value.toUpperCase() && data[index].full_time_part_time_indicator.toUpperCase().indexOf(time.value.toUpperCase() == -1)){
+					if(data[index].job_category.indexOf(job_category.value) == -1 && data[index].full_time_part_time_indicator.toUpperCase().indexOf(time.value.toUpperCase() == -1)){
 						build += Mustache.render(cardTemplate, data[index]);
 						}
 				
@@ -171,7 +171,6 @@
 					</div>
 			  </li>
             </ul>
-		</nav>
 		<ul>
 			<li>
             			<img src="brooklyn.jpg" height="100" width="100">
@@ -189,6 +188,8 @@
 				<img src="brooklyn.jpg" height="100" width="100">
 			</li>
 		</ul>
+		</nav>
+
 		<div id="output"></div>
 	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
