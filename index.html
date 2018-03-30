@@ -25,6 +25,7 @@
 			nav ul{
 				list-style: none;
 				padding-bottom: 3%;
+                background-color: #111;
 			}
 			#categories{
 				float: left;
@@ -36,6 +37,16 @@
                 border-style: outset;
                 border: 10px;
 			}
+            nav{
+            	background-color: #111;
+           	}
+            li{
+            	background-color: #111;
+                max-width: 100%;
+                padding-bottom: 10px;
+            }
+            
+            	
             	
 			
 			
@@ -100,6 +111,9 @@
 				padding-left: 8%;
 				padding-right: 10%;
 			}
+            #boroughs{
+            	background-color: #111;
+            }
 		</style>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -174,8 +188,9 @@
 					</div>
 			  </li>
             </ul>
+        <div id="boroughs">
 		<ul>
-			<li>
+			<li id="brooklyn">
             	<h2>Brooklyn</h2>
             	<img src="brooklyn.jpg">
             </li>
@@ -196,6 +211,7 @@
 				<img src="statenIsland.jpg">
 			</li>
 		</ul>
+        </div>
 		</nav>
 
 		<div id="output"></div>
