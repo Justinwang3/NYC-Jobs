@@ -147,7 +147,7 @@
 				var cardTemplate = document.getElementById("cardTemplate").innerHTML;
 				for(var index = 0; index < data.length; index++){
 					//if(data[index].incident_zip == zip.value && data[index].agency_name == agency.value){  1)
-					if(data[index].job_category.toUpperCase().indexOf(job_category.value.toUpperCase()) != -1 && data[index].full_time_part_time_indicator.toUpperCase().indexOf(time.value.toUpperCase() != -1){
+					if(data[index].job_category.toUpperCase().indexOf(job_category.value.toUpperCase()) != -1){
 						build += Mustache.render(cardTemplate, data[index]);
 						}
 				
